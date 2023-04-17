@@ -4,7 +4,7 @@ const connectDB = require('./config/db');
 const dotenv = require("dotenv").config();
 const PORT = process.env.PORT || 5000;
 const  cors = require('cors');
-app.use(cors())
+app.use(cors({origin : "https://code-aid.netlify.app/"}))
 // connectDB();
 app.use(express.json({extended : false}));
 
